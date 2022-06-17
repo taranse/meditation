@@ -1,19 +1,17 @@
 @import "globals/globals.scss";
 
-
 body {
   position: relative;
-  font-family: 'Druk Cyr';
+  font-family: "Druk Cyr";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   height: auto;
-  background-color: #FFF8EA;
+  background-color: #fff8ea;
 }
 
-
 .container {
-  max-width: 1856px;
+  max-width: 1920px;
   margin-inline: auto;
 }
 
@@ -32,7 +30,8 @@ body {
 .header__top-iner {
   display: flex;
   justify-content: space-between;
-  background-color: #FFF8EA;
+  background-color: #fff8ea;
+  padding: 0 32px;
 }
 
 .header__logo1 {
@@ -51,7 +50,7 @@ body {
   font-weight: 500;
   font-size: 40px;
   text-transform: uppercase;
-  color: #434B49;
+  color: #434b49;
   margin-right: 443px;
 }
 
@@ -59,58 +58,52 @@ body {
   margin-top: 26px;
   font-weight: 500;
   font-size: 40px;
-  color: #424B49;
+  color: #424b49;
   text-transform: uppercase;
-
 
   a {
     padding-left: 56px;
   }
-
-
 }
 
 // БАННЕР
 
 .main-part {
-  border-bottom: 1px solid #404846;
 }
 
 .main-part__iner {
   display: flex;
   margin-top: 32px;
-
+  border-bottom: 1px solid rgba(#404846, 0.15);
+}
+.main-part__iner-img {
+  padding: 32px;
+  width: 67%;
 }
 
 .main-banner__iner-info {
-  border-left: 2px solid #404846;
-  padding-left: 32px;
-  margin-left: 32px;
-
+  border-left: 1px solid rgba(#404846, 0.15);
+  padding: 32px;
+  flex: 1;
 }
 
 .main-banner__iner-info-title {
-  font-family: 'Druk Cyr';
   font-style: normal;
   font-weight: 500;
   font-size: 80px;
   line-height: 100%;
-
-
   color: #404846;
 
   h1 {
-    padding-top: 30px;
+    margin-top: 18px;
   }
 
   span {
     color: #8f7949;
   }
-
 }
 
 .main-banner__iner-info-description {
-  font-family: 'Neue Haas Unica W1G';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -121,7 +114,6 @@ body {
   color: #414947;
 
   opacity: 0.7;
-
 }
 
 .main-banner__iner-info-btn {
@@ -137,17 +129,17 @@ body {
   width: 295px;
   height: 105px;
 
-  background: #8F7949;
+  background: #8f7949;
 
   button {
-    font-family: 'Druk Cyr';
+    font-family: "Druk Cyr";
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 41px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -155,7 +147,7 @@ body {
   max-height: 308px;
 
   h1 {
-    font-family: 'Druk Cyr';
+    font-family: "Druk Cyr";
     font-style: normal;
     font-weight: 500;
     font-size: 300px;
@@ -168,8 +160,6 @@ body {
 
     color: #404846;
   }
-
-
 }
 
 // ПЕРВАЯ ЧАСТЬ
@@ -185,16 +175,16 @@ body {
 
 .first-part__iner-info {
   margin-left: 189px;
-  font-family: 'Druk Cyr';
+  font-family: "Druk Cyr";
   font-style: normal;
   font-weight: 500;
   font-size: 80px;
   line-height: 100%;
 
-
   color: #404846;
-
   span{
     color: #8f7949 ;
   }
 }
+
+
