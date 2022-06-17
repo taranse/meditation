@@ -2,3 +2,17 @@
 @import "mixins";
 @import "fonts";
 
+body {
+  font-family: "Druk Cyr";
+  font-weight: 500;
+}
+
+p {
+  font-family: "Neue Haas Unica";
+  font-weight: 500;
+}
+
+.border-radius {
+  border-radius: $borderRadius;
+  overflow: hidden;
+}
