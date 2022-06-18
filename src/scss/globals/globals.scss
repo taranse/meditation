@@ -12,7 +12,15 @@ p {
   font-weight: 500;
 }
 
+span{
+  color: #8f7949;
+}
+
 .border-radius {
   border-radius: $borderRadius;
   overflow: hidden;
+  &_half{
+    border-radius: $borderRadius / 2;
+    overflow: hidden;
+  }
 }

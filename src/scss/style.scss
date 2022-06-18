@@ -68,14 +68,14 @@ body {
 
 // БАННЕР
 
-.main-part {
-}
+.main-part {}
 
 .main-part__iner {
   display: flex;
   margin-top: 32px;
   border-bottom: 1px solid rgba(#404846, 0.15);
 }
+
 .main-part__iner-img {
   padding: 32px;
   width: 67%;
@@ -143,34 +143,36 @@ body {
   }
 }
 
-.banner {
-  max-height: 308px;
+// .banner {
+//   max-height: 308px;
 
-  h1 {
-    font-family: "Druk Cyr";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 300px;
-    line-height: 110%;
+//   h1 {
+//     font-family: "Druk Cyr";
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 300px;
+//     line-height: 110%;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+//     display: flex;
+//     align-items: center;
+//     letter-spacing: 2px;
+//     text-transform: uppercase;
 
-    color: #404846;
-  }
-}
+//     color: #404846;
+//   }
+// }
 
 // ПЕРВАЯ ЧАСТЬ
 
 .first-part__iner {
   display: flex;
   margin-top: 216px;
+  border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 }
 
 .first-part__iner-img {
   width: 447px;
+  padding: 32px;
 }
 
 .first-part__iner-info {
@@ -180,11 +182,217 @@ body {
   font-weight: 500;
   font-size: 80px;
   line-height: 100%;
-
+  flex: 1;
+  margin-bottom: 200px;
   color: #404846;
-  span{
-    color: #8f7949 ;
+
+  span {
+    color: #8f7949;
   }
 }
 
+// ПЕРВЫй БЛОГ
 
+.first-blog__iner {
+  display: flex;
+}
+
+.background-frame {
+  max-width: 1115px;
+  position: absolute;
+  top: 1980px;
+}
+
+.h1 {
+  font-family: 'Druk Cyr';
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 240px;
+  line-height: 100%;
+  margin-top: 212px;
+  margin-left: 347px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  color: #414A47;
+}
+
+.first-part__inner-img {
+  margin-top: 300px;
+  padding-left: 32px;
+  padding-right: 176px;
+  width: 43%;
+  z-index: 1;
+}
+
+.first-part__inner-info {
+  flex: 1;
+}
+
+.first-part__iner-info-tittle {
+  font-family: 'Druk Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  color: #404846;
+  margin-top: 120px;
+  margin-right: 189px;
+
+  span {
+    color: #8f7949;
+  }
+}
+
+.first-part__inner-info-description {
+  font-family: 'Neue Haas Unica W1G';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.015em;
+  color: #414947;
+  margin-top: 50px;
+  opacity: 0.7;
+
+  p {
+    padding-top: 40px;
+    margin-right: 504px;
+    min-width: 597px;
+  }
+}
+
+.first-part__inner-icon {
+  max-width: 283px;
+  margin-top: 200px;
+  margin-left: 220px;
+}
+
+.first-part__inner-icon2 {
+  position: absolute;
+  max-width: 283px;
+  left: 1583px;
+  top: 3055px;
+}
+
+.background-frame__right {
+  max-width: 1022px;
+  position: absolute;
+  right: 0;
+  top: 3465px;
+}
+
+.banner-img {
+  max-width: 1867px;
+  position: relative;
+  padding-left: 32px;
+  padding-top: 190px;
+}
+
+.h2 {
+  font-family: 'Druk Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 240px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 347px;
+  margin-top: 90px;
+  color: #414A47;
+}
+
+.second-part__inner {
+  display: flex;
+}
+
+.second-part__inner-info {
+  flex: 1;
+  padding-left: 187px;
+  padding-top: 90px;
+}
+
+
+.second-part__inner-img {
+  min-width: 285px;
+  margin-top: 447px;
+  padding-left: 32px;
+}
+
+.second-part__iner-info-tittle {
+  font-family: 'Druk Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+  max-width: 1069px;
+  color: #414A47;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.second-part__inner-info-description {
+  font-family: 'Neue Haas Unica W1G';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+
+  letter-spacing: -0.015em;
+
+  color: #414947;
+
+  opacity: 0.7;
+
+  p {
+    padding-top: 40px;
+    margin-right: 504px;
+    max-width: 597px;
+  }
+
+}
+
+.second-part__inner-img-blog {
+  position: absolute;
+  max-width: 731px;
+  right: 32px;
+  top: 5645px;
+}
+
+.background-frame-right {
+  position: absolute;
+  right: 0;
+}
+
+.second-part__inner-img-icon {
+  position: absolute;
+  max-width: 286px;
+  margin-top: 141px;
+  z-index: 2;
+}
+
+.background-frame-left {
+  position: absolute;
+  top: 6191px;
+  z-index: 1;
+}
+
+
+.h3 {
+  font-family: 'Druk Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 240px;
+  line-height: 100%;
+  padding-top: 673px;
+  padding-left: 661px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #414A47;
+}
+
+.third-part__inner{
+  display: flex;
+}
