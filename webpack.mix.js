@@ -16,7 +16,7 @@ mix.html({
     }
 });
 
-mix.serve('serve dist');
+mix.serve('serve dist -l 5000');
 mix.disableNotifications();
-mix.copy('src/assets', 'dist/assets');
-// mix.browserSync('localhost:3000');
+// mix.copy('src/assets', 'dist/assets');
+mix.browserSync('localhost:5000');
