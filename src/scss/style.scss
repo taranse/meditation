@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1920px;
   margin-inline: auto;
 }
@@ -197,13 +198,14 @@ body {
 // ПЕРВЫй БЛОГ
 
 .first-blog__iner {
+  position: relative;
   display: flex;
 }
 
 .background-frame {
   max-width: 1115px;
   position: absolute;
-  top: 1980px;
+  top: -6%;
 }
 
 .h1 {
@@ -269,21 +271,25 @@ body {
 .first-part__inner-icon {
   max-width: 283px;
   margin-top: 200px;
-  margin-left: 220px;
+  margin-left: 150px;
 }
 
 .first-part__inner-icon2 {
   position: absolute;
   max-width: 283px;
-  left: 1583px;
-  top: 3055px;
+  left: 82%;
+  top: 48%;
+}
+
+.banner-part {
+  position: relative;
 }
 
 .background-frame__right {
   max-width: 1022px;
   position: absolute;
-  right: 0;
-  top: 3465px;
+  right: 0%;
+  top: -35%;
 }
 
 .banner-img {
@@ -357,8 +363,8 @@ body {
 .second-part__inner-img-blog {
   position: absolute;
   max-width: 731px;
-  right: 32px;
-  top: 5645px;
+  right: 2%;
+  top: 36%;
 }
 
 .background-frame-right {
@@ -367,16 +373,22 @@ body {
 }
 
 .second-part__inner-img-icon {
-  position: absolute;
+  position: relative;
   max-width: 286px;
-  margin-top: 141px;
+  margin-top: 200px;
   z-index: 2;
 }
 
 .background-frame-left {
   position: absolute;
-  top: 6191px;
+  left: 0%;
+  top: 68%;
   z-index: 1;
+}
+
+.third-part{
+  margin-top: 190px;
+  margin-left: 661px;
 }
 
 .h3 {
@@ -385,8 +397,6 @@ body {
   font-weight: 500;
   font-size: 240px;
   line-height: 100%;
-  padding-top: 673px;
-  padding-left: 661px;
   letter-spacing: 2px;
   text-transform: uppercase;
 
