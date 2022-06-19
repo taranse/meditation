@@ -1,0 +1,18 @@
+.header {
+  &__social {
+    display: flex;
+    margin-top: 26px;
+    margin-bottom: 26px;
+
+    a {
+      margin-right: 16px;
+    }
+  }
+
+  &__top-iner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff8ea;
+    padding: 0 32px;
+  }
+}
