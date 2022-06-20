@@ -7,7 +7,7 @@ mix.js('src/js/app.js', 'dist/js').setPublicPath('dist');
 mix.sass('src/scss/style.scss', 'dist/css').setPublicPath('dist');
 
 mix.html({
-    htmlRoot: './src/index.html', // Your html root file(s)
+    htmlRoot: './src/*.html', // Your html root file(s)
     output: './', // The html output folder
     partialRoot: './src/partials',    // default partial path
     layoutRoot: './src/layouts',    // default partial path

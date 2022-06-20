@@ -1,19 +1,11 @@
 .mastery {
   position: relative;
 
-  &__h1 {
-    font-family: "Druk Cyr";
+  &__h2 {
     position: relative;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 240px;
-    line-height: 100%;
+    z-index: 1;
     margin-top: 212px;
     margin-left: 347px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    z-index: 1;
-    color: #414a47;
   }
 
   &__background-frame {
@@ -25,10 +17,11 @@
   &-blog__inner {
     position: relative;
     display: flex;
+    margin-top: 120px;
   }
 
   &-part__inner-img {
-    margin-top: 300px;
+    margin-top: 180px;
     padding-left: 32px;
     padding-right: 176px;
     width: 43%;
@@ -45,8 +38,8 @@
       font-size: 60px;
       line-height: 100%;
       color: #404846;
-      margin-top: 120px;
       margin-right: 189px;
+      margin-bottom: 90px;
 
       span {
         color: #8f7949;
@@ -54,21 +47,7 @@
     }
 
     &-description {
-      font-family: "Neue Haas Unica W1G";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 140%;
-      letter-spacing: -0.015em;
-      color: #414947;
-      margin-top: 50px;
-      opacity: 0.7;
-
-      p {
-        padding-top: 40px;
-        margin-right: 504px;
-        min-width: 597px;
-      }
+      max-width: 597px;
     }
   }
 
