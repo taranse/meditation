@@ -1,11 +1,32 @@
 .contemplation {
   position: relative;
+  display: flex;
+  margin-top: 216px;
+  border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
-  &_header {
-    
-    &_img {
-      
+
+  &-part__inner {
+    display: flex;
+
+    &-img {
+      min-width: 447px;
+      padding: 0px 32px;
+    }
+
+    &-info {
+      margin-left: 189px;
+      font-family: "Druk Cyr";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 100%;
+      flex: 1;
+      margin-bottom: 200px;
+      color: #404846;
+
+      span {
+        color: #8f7949;
+      }
     }
   }
 }
-

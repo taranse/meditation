@@ -1,0 +1,16 @@
+.banner {
+  position: relative;
+
+  &__background-frame__right {
+    max-width: 1022px;
+    position: absolute;
+    right: 0%;
+    top: -35%;
+  }
+
+  &__img {
+    position: relative;
+    padding: 32px;
+    padding-top: 190px;
+  }
+}

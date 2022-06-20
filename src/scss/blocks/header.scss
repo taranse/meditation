@@ -15,4 +15,37 @@
     background-color: #fff8ea;
     padding: 0 32px;
   }
+
+  &__Logo1 {
+    position: absolute;
+  }
+
+  &__Logo2 {
+    position: relative;
+    left: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #434b49;
+    margin-right: 443px;
+  }
+
+  &__nav {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #424b49;
+    text-transform: uppercase;
+
+    a {
+      padding-left: 56px;
+    }
+  }
+
 }

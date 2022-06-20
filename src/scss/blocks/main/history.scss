@@ -1,0 +1,91 @@
+.history {
+  position: relative;
+
+  &__h2 {
+    font-family: "Druk Cyr";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 240px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 347px;
+    margin-top: 90px;
+    color: #414a47;
+  }
+
+  &-part__inner {
+    display: flex;
+
+    &-info {
+      flex: 1;
+      padding-left: 187px;
+      padding-top: 90px;
+
+      &-tittle {
+        font-family: "Druk Cyr";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        max-width: 1069px;
+        color: #414a47;
+        padding-bottom: 50px;
+        position: relative;
+      }
+
+      &-description {
+        font-family: "Neue Haas Unica W1G";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+
+        letter-spacing: -0.015em;
+
+        color: #414947;
+
+        opacity: 0.7;
+
+        p {
+          padding-top: 40px;
+          margin-right: 504px;
+          max-width: 597px;
+        }
+      }
+
+    }
+
+    &-img {
+      min-width: 285px;
+      margin-top: 447px;
+      padding-left: 32px;
+
+      &-blog {
+        position: absolute;
+        max-width: 731px;
+        right: 2%;
+        top: 36%;
+      }
+
+      &-icon {
+        position: relative;
+        max-width: 286px;
+        margin-top: 200px;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__background-frame-right {
+    position: absolute;
+    right: 0;
+  }
+
+  &__background-frame-left {
+    position: absolute;
+    left: 0%;
+    top: 68%;
+    z-index: 1;
+  }
+}

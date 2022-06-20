@@ -1,0 +1,73 @@
+.footer {
+
+  &-inner {
+    position: relative;
+    display: flex;
+    height: 428px;
+    bottom: 0px;
+    margin: 300px 32px 32px 32px;
+    background: #414A47;
+
+    &__logo {
+      padding-top: 95px;
+      padding-left: 64px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Druk Cyr';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 110%;
+      text-transform: uppercase;
+      padding-top: 66px;
+      margin-left: 189px;
+
+      a {
+        color: #fff;
+        padding-top: 24px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Druk Cyr';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 110%;
+      text-transform: uppercase;
+      padding-top: 66px;
+      margin-left: 153px;
+
+      a {
+        color: #FFFFFF;
+        padding-top: 24px;
+      }
+    }
+
+    &__sosial {
+      display: flex;
+      flex-direction: column;
+      padding-top: 80px;
+      padding-left: 247px;
+
+      &-phone {
+        color: #fff;
+        padding-left: 16px;
+      }
+
+      &-icon {
+        display: flex;
+
+        a {
+          padding-top: 24px;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}
