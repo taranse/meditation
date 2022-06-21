@@ -3,9 +3,23 @@
 @import "fonts";
 
 body {
+  position: relative;
   font-family: "Druk Cyr";
+  font-style: normal;
   font-weight: 500;
+  font-size: 40px;
+  height: auto;
+  background-color: #fff8ea;
   color: #414a47;
+}
+
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+main {
+  overflow: hidden;
 }
 
 p {

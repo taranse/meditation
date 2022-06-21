@@ -1,59 +1,49 @@
 .footer {
-
   &-inner {
     position: relative;
     display: flex;
     height: 428px;
     bottom: 0px;
     margin: 0px 32px 32px 32px;
-    background: #414A47;
+    background: #414a47;
+    justify-content: space-between;
+    padding: 90px 64px;
+
+    a {
+      color: #fff;
+      margin-bottom: 24px;
+    }
 
     &__logo {
-      padding-top: 95px;
-      padding-left: 64px;
+      transform: translateY(8px);
     }
 
     &__nav {
       display: flex;
       flex-direction: column;
-      font-family: 'Druk Cyr';
+      font-family: "Druk Cyr";
       font-style: normal;
       font-weight: 500;
       font-size: 40px;
       line-height: 110%;
       text-transform: uppercase;
-      padding-top: 66px;
-      margin-left: 189px;
-
-      a {
-        color: #fff;
-        padding-top: 24px;
-      }
     }
 
     &__info {
       display: flex;
       flex-direction: column;
-      font-family: 'Druk Cyr';
+      font-family: "Druk Cyr";
       font-style: normal;
       font-weight: 500;
       font-size: 40px;
       line-height: 110%;
       text-transform: uppercase;
-      padding-top: 66px;
-      margin-left: 153px;
-
-      a {
-        color: #FFFFFF;
-        padding-top: 24px;
-      }
     }
 
     &__sosial {
       display: flex;
       flex-direction: column;
-      padding-top: 80px;
-      padding-left: 247px;
+      width: 400px;
 
       &-phone {
         color: #fff;

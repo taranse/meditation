@@ -14,27 +14,20 @@
       position: absolute;
       display: flex;
       justify-content: center;
-      padding-top: 12px;
+      align-items: center;
+
       width: 65px;
       height: 85px;
-      bottom: 40%;
+      
       left: 104%;
       top: 27%;
-      background: #8F7949;
+      background: #8f7949;
       border-radius: 26px;
 
-      p {
-        width: 17px;
-        height: 61px;
-        font-family: 'Druk Cyr';
-        font-size: 48px;
-        line-height: 61px;
-
-        letter-spacing: -0.015em;
-
-        color: #FFFFFF;
-      }
+      font-size: 48px;
+      line-height: 61px;
+      letter-spacing: -0.015em;
+      color: #ffffff;
     }
-
   }
 }

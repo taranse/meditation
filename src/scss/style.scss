@@ -9,19 +9,3 @@
 @import "blocks/catalog/experience.scss";
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
-
-body {
-  position: relative;
-  font-family: "Druk Cyr";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  height: auto;
-  background-color: #fff8ea;
-}
-
-.container {
-  max-width: 1920px;
-  margin-inline: auto;
-  overflow: hidden;
-}
