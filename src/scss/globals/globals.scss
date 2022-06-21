@@ -25,6 +25,7 @@ span {
 .border-radius {
   border-radius: $borderRadius;
   overflow: hidden;
+
   &_half {
     border-radius: $borderRadius / 2;
     overflow: hidden;
@@ -36,4 +37,15 @@ span {
   line-height: 100%;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 140px;
+  line-height: 100%;
+}
+
+.h4 {
+  font-size: 80px;
+  line-height: 100%;
+  color: #404846;
 }

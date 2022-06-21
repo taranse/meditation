@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  margin-top: 32px;
+  border-bottom: 1px solid rgba(#404846, 0.15);
+
+  &__part-iner-img {
+    padding: 32px;
+    width: 67%;
+  }
+
+  &__banner-iner-info {
+    border-left: 1px solid rgba(#404846, 0.15);
+    padding: 32px;
+    flex: 1;
+
+    &-title {
+      margin-bottom: 40px;
+
+      h1 {
+        margin-top: 18px;
+      }
+
+      span {
+        color: #8f7949;
+      }
+    }
+
+    &-description {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 160%;
+      margin-top: 40px;
+      letter-spacing: -0.015em;
+
+      color: #414947;
+
+      opacity: 0.7;
+    }
+
+    &-btn {
+      display: flex;
+      padding: 32px 48px;
+      margin-top: 64px;
+      width: 295px;
+      border-radius: 26px;
+
+      background: #8f7949;
+
+      button {
+        font-weight: 500;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+}

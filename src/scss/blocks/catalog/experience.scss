@@ -1,0 +1,36 @@
+.experience {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 300px;
+
+  &__inner {
+    margin-left: 645px;
+
+    &-title {
+      margin-right: 57px;
+      margin-bottom: 64px;
+    }
+
+    &-btn {
+      padding: 32px 48px;
+      width: 455px;
+
+      background: #8F7949;
+      border-radius: 26px;
+
+      button {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 41px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__background-frame{
+    position: absolute;
+    left: -14.5%;
+    top: -18.5%;
+  }
+}

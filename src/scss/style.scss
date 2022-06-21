@@ -4,6 +4,9 @@
 @import "blocks/main/banner.scss";
 @import "blocks/main/history.scss";
 @import "blocks/main/mission.scss";
+@import "blocks/main/main.scss";
+@import "blocks/catalog/title.scss";
+@import "blocks/catalog/experience.scss";
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
 
@@ -20,83 +23,5 @@ body {
 .container {
   max-width: 1920px;
   margin-inline: auto;
+  overflow: hidden;
 }
-
-// ШАПКА
-
-// БАННЕР
-
-
-.main-part__iner {
-  display: flex;
-  margin-top: 32px;
-  border-bottom: 1px solid rgba(#404846, 0.15);
-}
-
-.main-part__iner-img {
-  padding: 32px;
-  width: 67%;
-}
-
-.main-banner__iner-info {
-  border-left: 1px solid rgba(#404846, 0.15);
-  padding: 32px;
-  flex: 1;
-}
-
-.main-banner__iner-info-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 80px;
-  line-height: 100%;
-  color: #404846;
-
-  h1 {
-    margin-top: 18px;
-  }
-
-  span {
-    color: #8f7949;
-  }
-}
-
-.main-banner__iner-info-description {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 160%;
-  margin-top: 40px;
-  letter-spacing: -0.015em;
-
-  color: #414947;
-
-  opacity: 0.7;
-}
-
-.main-banner__iner-info-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 48px;
-  margin-top: 64px;
-  border-radius: 26px;
-  margin-bottom: 207px;
-
-  width: 295px;
-  height: 105px;
-
-  background: #8f7949;
-
-  button {
-    font-family: "Druk Cyr";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 41px;
-    text-transform: uppercase;
-
-    color: #ffffff;
-  }
-}
-
