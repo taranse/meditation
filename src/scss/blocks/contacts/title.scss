@@ -8,24 +8,43 @@
 
   &__group {
     display: flex;
-    justify-content: space-between;
     margin-left: 347px;
     margin-top: 165px;
     margin-bottom: 136px;
 
     &-info {
 
-
       &-title {
         font-size: 32px;
         line-height: 41px;
         color: #868B85;
         text-transform: uppercase;
+        margin-bottom: 31px;
+
+        &-main{
+          text-transform: uppercase;
+        }
 
         &-sosial{
           display: flex;
+          max-width: 48px;
+          img{
+            margin-left: 16px;
+          }
         }
       }
     }
   }
+}
+
+.contacts-main{
+  margin-left: 216px;
+}
+.sosial-title{
+  margin-left: 16px;
+}
+
+.contacts-sosial{
+  flex: 1;
+  margin-left: 76px;
 }

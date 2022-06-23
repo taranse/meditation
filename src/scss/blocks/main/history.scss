@@ -79,13 +79,14 @@
 
   &__background-frame-right {
     position: absolute;
-    right: 0;
+    right: -14%;
+    top: 1%;
   }
 
   &__background-frame-left {
     position: absolute;
-    left: 0%;
-    top: 68%;
+    left: -13%;
+    top: 70%;
     z-index: 1;
   }
 }

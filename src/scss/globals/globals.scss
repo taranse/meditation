@@ -65,22 +65,41 @@ span {
   color: #404846;
 }
 
-.h5{
+.h5 {
   font-size: 64px;
   line-height: 81px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 
-.title_main{
+.title_main {
   margin-bottom: 40px;
 }
 
-.title_margin{
+.title_margin {
   margin-top: 160px;
   margin-bottom: 90px;
 }
 
-.frame{
+.frame {
   pointer-events: none;
+}
+
+.text-indent {
+  text-indent: 30%;
+  position: relative;
+
+
+  .small_title {
+    position: absolute;
+    left: 0%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+
+    letter-spacing: -0.015em;
+
+    color: #677470;
+
+  }
 }
