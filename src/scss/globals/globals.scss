@@ -56,10 +56,31 @@ span {
 .h3 {
   font-size: 140px;
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 .h4 {
   font-size: 80px;
   line-height: 100%;
   color: #404846;
+}
+
+.h5{
+  font-size: 64px;
+  line-height: 81px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.title_main{
+  margin-bottom: 40px;
+}
+
+.title_margin{
+  margin-top: 160px;
+  margin-bottom: 90px;
+}
+
+.frame{
+  pointer-events: none;
 }

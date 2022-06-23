@@ -1,0 +1,31 @@
+.contacts {
+  border-bottom: 1px solid rgba(64, 72, 70, 0.15);
+
+  &__title {
+    margin-top: 110px;
+    margin-left: 347px;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 347px;
+    margin-top: 165px;
+    margin-bottom: 136px;
+
+    &-info {
+
+
+      &-title {
+        font-size: 32px;
+        line-height: 41px;
+        color: #868B85;
+        text-transform: uppercase;
+
+        &-sosial{
+          display: flex;
+        }
+      }
+    }
+  }
+}

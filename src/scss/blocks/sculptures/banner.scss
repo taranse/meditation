@@ -1,0 +1,9 @@
+.sculptures__banner {
+  position: relative;
+
+  &-img {
+    position: relative;
+    padding: 32px;
+    z-index: 2;
+  }
+}

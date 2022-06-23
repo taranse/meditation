@@ -1,4 +1,6 @@
 @import "globals/globals.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
 @import "blocks/main/contemplation.scss";
 @import "blocks/main/mastery.scss";
 @import "blocks/main/banner.scss";
@@ -7,5 +9,9 @@
 @import "blocks/main/main.scss";
 @import "blocks/catalog/title.scss";
 @import "blocks/catalog/experience.scss";
-@import "blocks/header.scss";
-@import "blocks/footer.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/sculptures/title.scss";
+@import "blocks/sculptures/banner.scss";
+@import "blocks/sculptures/blog.scss";
+@import "blocks/contacts/title.scss";
+@import "blocks/contacts/form.scss";
