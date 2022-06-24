@@ -11,6 +11,10 @@ body {
   height: auto;
   background-color: #fff8ea;
   color: #414a47;
+
+  &.no-scroll{
+    overflow:hidden;
+  }
 }
 
 .container {
@@ -86,7 +90,6 @@ span {
 }
 
 .text-indent {
-  text-indent: 30%;
   position: relative;
 
   .small_title {
@@ -103,4 +106,8 @@ span {
 
     color: #677470;
   }
+}
+
+.btn-opacity {
+  background: #8F7949;
 }

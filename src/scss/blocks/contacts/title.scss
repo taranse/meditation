@@ -1,14 +1,18 @@
-.contacts {
+.border_bottom {
   border-bottom: 1px solid rgba(64, 72, 70, 0.15);
+}
+
+.contacts {
+  max-width: 1206px;
+  margin-inline: auto;
+  padding-left: 20px;
 
   &__title {
     margin-top: 110px;
-    margin-left: 347px;
   }
 
   &__group {
     display: flex;
-    margin-left: 347px;
     margin-top: 165px;
     margin-bottom: 136px;
 
@@ -21,14 +25,14 @@
         text-transform: uppercase;
         margin-bottom: 31px;
 
-        &-main{
+        &-main {
           text-transform: uppercase;
         }
 
-        &-sosial{
+        &-sosial {
           display: flex;
           max-width: 48px;
-          img{
+          img {
             margin-left: 16px;
           }
         }
@@ -37,14 +41,15 @@
   }
 }
 
-.contacts-main{
+.contacts-main {
   margin-left: 216px;
 }
-.sosial-title{
+
+.sosial-title {
   margin-left: 16px;
 }
 
-.contacts-sosial{
+.contacts-sosial {
   flex: 1;
   margin-left: 76px;
 }
