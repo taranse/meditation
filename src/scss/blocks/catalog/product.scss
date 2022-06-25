@@ -7,6 +7,14 @@
   width: 33.3%;
   position: relative;
 
+  @include tablet {
+    width: 50%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
   &__btn {
     position: absolute;
     display: flex;
@@ -17,10 +25,10 @@
     line-height: 36px;
     width: 112px;
     height: 112px;
-    background-color: #8F7949;
+    background-color: #8f7949;
     border-radius: 32px;
-    top: 44%;
-    left: 69%;
+    bottom: 54px;
+    right: 54px;
     color: #fff;
     letter-spacing: -0.01em;
     text-transform: uppercase;
@@ -33,8 +41,24 @@
     border-right: 1px solid rgba(64, 72, 70, 0.15);
     border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
+    @include laptop {
+      
+    }
+
+    @include tablet {
+      padding: 24px;
+    }
+
+    @include mobile {
+    }
+
     &-img {
       max-width: 574px;
+      position: relative;
+
+      @include mobile {
+        position: static;
+      }
     }
 
     &-block {
@@ -44,7 +68,6 @@
       &-tittle {
         margin-bottom: 32px;
       }
-
 
       &-description {
         margin-bottom: 48px;

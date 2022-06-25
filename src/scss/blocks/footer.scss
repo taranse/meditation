@@ -9,6 +9,11 @@
     justify-content: space-between;
     padding: 90px 64px;
 
+    @include mobile {
+      flex-direction: column;
+      height: auto;
+    }
+
     a {
       color: #fff;
       margin-bottom: 24px;
@@ -16,6 +21,12 @@
 
     &__logo {
       transform: translateY(8px);
+
+      @include mobile {
+        width: 110px;
+        transform: none;
+        margin-inline: auto;
+      }
     }
 
     &__nav {
@@ -48,6 +59,22 @@
       &-phone {
         color: #fff;
         padding-left: 16px;
+
+        &-desktop {
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &-mobile {
+          display: none;
+
+          @include mobile {
+            display: block;
+            padding-left: 0;
+            margin-inline: auto;
+          }
+        }
       }
 
       &-icon {

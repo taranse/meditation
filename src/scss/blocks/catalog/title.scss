@@ -4,10 +4,11 @@
   border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
   &__group {
-    position: relative;
+    // position: relative;
 
     &-h3 {
       margin: 115px 0;
+      position: relative;
     }
 
     &-badge {
@@ -18,16 +19,22 @@
 
       width: 65px;
       height: 85px;
-      
+
       left: 104%;
-      top: 27%;
+      top: -20%;
       background: #8f7949;
       border-radius: 26px;
 
-      font-size: 48px;
-      line-height: 61px;
+      @include font-size(48, 24);
+      // line-height: 61px;
       letter-spacing: -0.015em;
       color: #ffffff;
+
+      @include mobile {
+        width: 37px;
+        height: 46px;
+        border-radius: 12px;
+      }
     }
   }
 }

@@ -154,7 +154,7 @@
 @mixin font-size($sizeBig, $sizeSmall: $sizeBig, $windowSizeBig: $windowBig, $windowSizeSmall: $windowSmall) {
   font-size: size($sizeBig, $sizeSmall, $windowSizeBig, $windowSizeSmall);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
 
   @media (max-width: #{$windowSizeSmall}px) {
     font-size: #{$sizeSmall}px;

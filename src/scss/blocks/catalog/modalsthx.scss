@@ -10,14 +10,14 @@
   z-index: 101;
   // background-color: #fff8eb;
   // background-color: rgba($color: #fff8eb, $alpha: 0);
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
   @include transition(opacity);
-
 
   &.active {
     background-color: rgba(#fff8eb, 0.96);
     // opacity: 0.96;
+    opacity: 1;
     pointer-events: all;
   }
 
@@ -27,13 +27,12 @@
     top: 29px;
   }
 
-
   &__inner {
     position: relative;
     width: 598px;
     height: 318px;
-    background: #FFF8EB;
-    border: 2px solid #868B85;
+    background: #fff8eb;
+    border: 2px solid #868b85;
     border-radius: 26px;
 
     &-title {
