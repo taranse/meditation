@@ -8,13 +8,17 @@
   &__h2 {
     position: relative;
     z-index: 1;
-    margin-top: 212px;
-    margin-left: 347px;
+    margin-top: 11%;
+    margin-left: 18%;
 
     @include mobile {
       margin-top: 15px;
       margin-left: 0px;
       margin-bottom: 40px;
+    }
+
+    @include tablet{
+
     }
   }
 
@@ -46,13 +50,15 @@
       padding-left: 0;
       padding-right: 0;
       margin-top: 0;
-      width: 100%;
+      width: 50%;
       margin-bottom: 40px;
+      margin-inline-start: auto;
     }
   }
 
   &-part__inner-info {
     flex: 1;
+    margin-bottom: 190px;
 
     &-tittle {
       margin-right: 189px;
@@ -83,14 +89,15 @@
   }
 
   &-part__inner-icon {
-    max-width: 283px;
+    width: 33%;
     margin-top: 200px;
     margin-left: 150px;
 
     @include mobile {
-      max-width: 116px;
+      width: 0;
+      min-width: 38%;
       margin-top: 24px;
-
+      margin-left: 51%;
       img {
         border-radius: 32px;
       }
@@ -104,5 +111,17 @@
     max-width: 283px;
     left: 82%;
     top: 48%;
+
+    img {
+      @include mobile {
+        border-radius: 32px;
+      }
+    }
+
+    @include mobile {
+      width: 36%;
+      left: 0%;
+      top: 10%;
+    }
   }
 }

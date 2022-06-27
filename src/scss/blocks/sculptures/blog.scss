@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 40%; 
+  max-width: 40%;
   margin-left: 34%;
 
   // @include vw-property-big(
@@ -114,10 +114,11 @@
 
 .sculptures__background-frame-head {
   position: absolute;
-  right: -144%;
-  top: -25%;
+  right: -41%;
+  top: 0%;
+  transform: translate(65%, -47%);
 
-  @include mobile {
+  @include tablet {
     right: -5%;
     top: 0;
     transform: translate(43%, 32%);
@@ -126,8 +127,13 @@
 
 .sculptures__background-frame-body {
   position: absolute;
-  left: -166%;
-  top: 11%;
+  left: -75%;
+  top: 0%;
+  transform: translate(-50%, 8%);
+
+  @include mobile{
+    transform: translate(-21%, 119%);
+  }
 }
 
 .sculptures__background-frame-foooter {
@@ -148,7 +154,7 @@
 
   @include mobile {
     top: 0%;
-    left: -76%;
-    transform: translate(5%, 0%);
+    left: -64%;
+    transform: translate(3%, 4%);
   }
 }
