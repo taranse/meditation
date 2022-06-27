@@ -148,7 +148,7 @@
   $k: $windowSizeBig * $sizeSmall - $windowSizeSmall * $sizeBig;
   $y: $windowSizeBig - $windowSizeSmall;
 
-  @return calc((#{$x} * 100vw) / #{$y} + #{$k / $y}px);
+  @return calc((#{$x} * 100vw) / #{$y} + #{math.div($k, $y)}px);
 }
 
 @mixin font-size($sizeBig, $sizeSmall: $sizeBig, $windowSizeBig: $windowBig, $windowSizeSmall: $windowSmall) {
@@ -204,8 +204,8 @@
   padding-right: $offsetMain;
 
   @include tablet {
-    padding-left: $offsetMain / 2;
-    padding-right: $offsetMain / 2;
+    padding-left: math.div($offsetMain, 2);
+    padding-right: math.div($offsetMain, 2);
   }
 }
 

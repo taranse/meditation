@@ -5,9 +5,13 @@
   &__h2 {
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 347px;
+    margin-left: 18%;
     margin-top: 90px;
     @include font-size(240, 56);
+
+    @include tablet {
+      margin-left: 10%;
+    }
 
     @include mobile {
       margin-left: 0;
@@ -23,16 +27,64 @@
       flex-direction: column-reverse;
     }
 
+    &-images {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    &-img {
+      top: 23%;
+      position: absolute;
+      left: 0;
+      width: 15%;
+
+      @include tablet {
+        position: static;
+        width: 31%;
+      }
+
+      &-blog {
+        position: absolute;
+        max-width: 31%;
+        right: 2%;
+        top: 21%;
+
+        @include tablet {
+          position: static;
+          width: 42%;
+        }
+      }
+
+      &-icon {
+        position: relative;
+        max-width: 286px;
+        margin-top: 200px;
+        z-index: 2;
+      }
+    }
+
     &-info {
-      flex: 1;
-      padding-left: 187px;
-      padding-top: 90px;
+      position: relative;
+      // padding-left: 187px;
+      // padding-top: 90px;
+      padding-left: 26%;
+
+      @include tablet {
+        padding-left: 16%;
+      }
 
       &-description {
         p {
           @include mobile {
             margin-bottom: 16px;
           }
+        }
+
+        width: 42%;
+
+        @include tablet {
+          width: 70%;
         }
       }
 
@@ -55,26 +107,6 @@
     }
   }
 
-  &-img {
-    min-width: 285px;
-    margin-top: 447px;
-    padding-left: 32px;
-
-    &-blog {
-      position: absolute;
-      max-width: 731px;
-      right: 2%;
-      top: 36%;
-    }
-
-    &-icon {
-      position: relative;
-      max-width: 286px;
-      margin-top: 200px;
-      z-index: 2;
-    }
-  }
-
   &__background-frame-right {
     position: absolute;
     right: -14%;
@@ -87,5 +119,4 @@
     top: 70%;
     z-index: 1;
   }
-
 }
