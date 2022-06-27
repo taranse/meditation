@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "laravel-mix-serve": "^2.2.2",
-    "mix-html-builder": "^0.8.0"
+    "mix-html-builder": "^0.8.0",
+    "swiper": "^8.2.5"
   }
 }
