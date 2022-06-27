@@ -19,6 +19,11 @@
     position: absolute;
     right: 37px;
     top: 37px;
+
+    @include laptop {
+      top: 50px;
+      right: 50px;
+    }
   }
 
   &__inner {
@@ -63,8 +68,12 @@
           margin-bottom: 32px;
           font-size: 90px;
           letter-spacing: -0.01em;
+          @include font-size(90, 50);
+          padding-top: 20%;
+
 
           @include mobile {
+            padding-top: 0%;
             margin-bottom: 24px;
             font-size: 48px;
           }
@@ -157,6 +166,10 @@
       &-img {
         width: 37vw;
 
+        @include mobile {
+          width: 86vw;
+        }
+
         &-small {
           display: flex;
           width: 26vw;
@@ -164,9 +177,14 @@
           margin-top: 24px;
           // justify-content: center;
 
+          @include laptop{
+            width: 35vw;
+          }
+
           @include mobile {
-            margin-right: 39px;
-            margin-left: 31px;
+            width: 79vw;
+            margin-right: 6%;
+            margin-left: 7%;
             margin-bottom: 32px;
           }
 
@@ -224,7 +242,7 @@
   font-weight: 500;
   font-size: 32px;
   /* identical to box height */
-
+  
   text-transform: uppercase;
 
   color: #ffffff;

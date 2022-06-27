@@ -20,7 +20,7 @@
       margin-right: 16px;
 
       @include tablet {
-        margin-right: 8px;
+        margin-right: 16px;
       }
     }
   }
@@ -28,6 +28,8 @@
   &__menu-social {
     @include tablet {
       display: flex;
+      padding-top: 40px;
+      margin-right: 16px;
     }
   }
 
@@ -188,8 +190,37 @@
     left: 0;
     top: 0;
     padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
     transform: translateX(100%);
     transition: transform 0.5s ease;
+
+
+    &-phone{
+      font-size: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba($color: #414A47, $alpha: 0.05);
+    }
+
+    &-nav{
+      display: flex;
+      flex-direction: column;
+      margin-top: 32px;
+      border-bottom: 1px solid rgba(65, 74, 71, 0.05);
+      padding-bottom: 14px;
+      
+      a{
+        padding-bottom: 16px;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    }
+
+    &-sosial{
+      display: flex;
+      padding-top: 32px;
+    }
+
   }
 
   &.active {
