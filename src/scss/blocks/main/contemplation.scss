@@ -43,6 +43,7 @@
 
       @include tablet {
         width: 70%;
+        margin-bottom: 100px;
       }
 
       @include mobile {

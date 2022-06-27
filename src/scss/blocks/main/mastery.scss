@@ -17,9 +17,7 @@
       margin-bottom: 40px;
     }
 
-    @include tablet{
-
-    }
+    @include tablet {}
   }
 
   &__background-frame {
@@ -36,15 +34,20 @@
     @include mobile {
       margin-top: 0;
       flex-direction: column;
+
     }
   }
 
   &-part__inner-img {
-    margin-top: 180px;
+    margin-top: 190px;
     padding-left: 32px;
     padding-right: 176px;
     width: 43%;
     z-index: 1;
+
+    @include tablet {
+      display: none;
+    }
 
     @include mobile {
       padding-left: 0;
@@ -60,10 +63,21 @@
     flex: 1;
     margin-bottom: 190px;
 
+    @include tablet {
+      padding-left: 16%;
+      margin-bottom: 7%;
+    }
+
+    @include mobile {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
     &-tittle {
       margin-right: 189px;
       margin-bottom: 90px;
       @include font-size(60, 32);
+      line-height: 100%;
 
       @include mobile {
         margin-bottom: 32px;
@@ -77,7 +91,15 @@
     }
 
     &-description {
-      max-width: 597px;
+      width: 55%;
+
+      @include tablet {
+        width: 70%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
 
       @include mobile {
         p {
@@ -90,14 +112,15 @@
 
   &-part__inner-icon {
     width: 33%;
-    margin-top: 200px;
-    margin-left: 150px;
+    margin-top: 20%;
+    margin-left: 10%;
 
     @include mobile {
       width: 0;
       min-width: 38%;
       margin-top: 24px;
       margin-left: 51%;
+
       img {
         border-radius: 32px;
       }
@@ -108,9 +131,10 @@
 
   &-part__inner-icon2 {
     position: absolute;
-    max-width: 283px;
-    left: 82%;
-    top: 48%;
+    max-width: 20%;
+    right: 2%;
+    top: 33%;
+
 
     img {
       @include mobile {
@@ -118,7 +142,18 @@
       }
     }
 
+    @include tablet {
+      max-width: 18%;
+      right: 2%;
+      top: 33%;
+
+      img {
+        border-radius: 32px;
+      }
+    }
+
     @include mobile {
+      display: none;
       width: 36%;
       left: 0%;
       top: 10%;
