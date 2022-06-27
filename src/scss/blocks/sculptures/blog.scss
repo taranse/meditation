@@ -2,10 +2,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 755px;
-  margin-left: 661px;
+
+  max-width: 40%; 
+  margin-left: 34%;
+
+  // @include vw-property-big(
+  //   (
+  //     margin-left: 661,
+  //     max-width: 755,
+  //   )
+  // );
+
+  @include tablet {
+    max-width: 60%;
+    margin-left: 24%;
+  }
 
   @include mobile {
+    max-width: 100%;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -18,12 +32,12 @@
     @include mobile {
       font-size: 40px;
       line-height: 110%;
-      color: #414A47;
+      color: #414a47;
     }
   }
 
   &-important {
-    font-family: 'Neue Haas Unica';
+    font-family: "Neue Haas Unica";
     font-style: normal;
     font-size: 18px;
     line-height: 140%;
@@ -41,20 +55,20 @@
   }
 
   &-description {
-    width: 328px;
+    @include mobile {
+      max-width: 328px;
+    }
   }
 
   &-description p {
-
     @include mobile {
       margin-bottom: 24px;
     }
-
   }
 }
 
 .list {
-  font-family: 'Neue Haas Unica';
+  font-family: "Neue Haas Unica";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -86,7 +100,6 @@
       opacity: 0.7;
     }
   }
-
 }
 
 .sculptures__inner {

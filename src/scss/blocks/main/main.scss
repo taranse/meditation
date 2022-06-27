@@ -15,6 +15,10 @@
     padding: 32px;
     width: 67%;
 
+    @include laptop {
+      width: 60%;
+    }
+
     @include mobile {
       padding: 0;
       width: 100%;
@@ -63,9 +67,7 @@
           margin-bottom: 32px;
         }
       }
-
     }
-
 
     &-btn {
       display: flex;

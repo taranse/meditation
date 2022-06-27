@@ -3,32 +3,40 @@
   margin-top: 200px;
   margin-bottom: 200px;
 
-  @include tablet {
+  @include mobile {
     margin: 72px 25px;
   }
 
-
   &__inner {
-    margin-left: 645px;
+    margin-left: auto;
+    margin-right: 57px;
     position: relative;
     z-index: 1;
+    max-width: 63%;
+
+    @include laptop {
+      max-width: 80%;
+    }
 
     @include tablet {
-      margin-left: 0;
+      max-width: 90%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      margin-right: 0;
     }
 
     &-title {
       font-style: normal;
       font-weight: 500;
-      font-size: 80px;
-      line-height: 100%;
-      margin-right: 57px;
       margin-bottom: 64px;
       text-indent: 21%;
 
+      @include font-size(80, 36);
+      line-height: 100%;
 
-      @include tablet {
-        font-size: 36px;
+      @include mobile {
         margin-right: 0px;
         margin-bottom: 40px;
         text-indent: 35%;
@@ -52,7 +60,7 @@
       justify-content: center;
       align-items: center;
 
-      @include tablet {
+      @include mobile {
         line-height: 28px;
         border-radius: 16px;
         padding: 24px 0;
@@ -66,7 +74,7 @@
     top: -44.5%;
     z-index: 0;
 
-    @include tablet {
+    @include mobile {
       width: 420px;
       left: 0;
       top: 0;

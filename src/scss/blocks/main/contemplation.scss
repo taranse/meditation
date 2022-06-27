@@ -8,32 +8,49 @@
     margin-top: 39px;
   }
 
-
   &-part__inner {
     display: flex;
+    justify-content: space-between;
+    padding: 25px;
 
     @include mobile {
       flex-direction: column;
-      padding: 25px;
     }
 
     &-img {
-      min-width: size(447, 200);
-      padding-right: 150px;
+      width: 23%;
+      // padding-right: 150px;
+
+      @include laptop {
+        width: 30%;
+      }
+
+      @include tablet {
+        width: 25%;
+      }
+
+      @include mobile {
+        width: 200px;
+      }
     }
 
     &-info {
-      margin-left: 189px;
-      flex: 1;
       margin-bottom: 200px;
       text-indent: 23%;
+      width: 64%;
       @include font-size(80, 36);
+      line-height: 100%;
+
+      @include tablet {
+        width: 70%;
+      }
 
       @include mobile {
         margin-top: 48px;
         margin-left: 0;
         text-indent: 38%;
         margin-bottom: 23px;
+        width: 100%;
       }
 
       span {

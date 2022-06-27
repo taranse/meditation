@@ -9,7 +9,7 @@
     justify-content: space-between;
     padding: 90px 64px;
 
-    @include mobile {
+    @include tablet {
       margin: 0px 24px 24px 24px;
       padding: 48px 24px;
       flex-direction: column;
@@ -21,7 +21,7 @@
       margin-bottom: 24px;
       @include font-size(40, 26);
 
-      @include mobile {
+      @include tablet {
         margin-bottom: 16px;
       }
     }
@@ -29,7 +29,7 @@
     &__logo {
       transform: translateY(8px);
 
-      @include mobile {
+      @include tablet {
         width: 110px;
         transform: none;
         margin-inline: auto;
@@ -41,12 +41,12 @@
       flex-direction: column;
       text-transform: uppercase;
 
-      @include mobile {
+      @include tablet {
         border-top: solid 1px rgba($color: #fff, $alpha: 0.05);
         padding-top: 32px;
       }
 
-      a{
+      a {
         @include font-size(40, 26);
       }
     }
@@ -56,24 +56,30 @@
       flex-direction: column;
       text-transform: uppercase;
 
-      @include mobile {
+      @include tablet {
         border-bottom: solid 1px rgba($color: #fff, $alpha: 0.05);
         padding-bottom: 16px;
       }
-
     }
 
     &__sosial {
       display: flex;
       flex-direction: column;
-      width: 400px;
+      width: 20%;
+
+      @include tablet {
+        align-items: center;
+        width: 100%;
+      }
 
       &-phone {
         color: #fff;
         padding-left: 16px;
 
+        @include font-size(40, 32);
+
         &-desktop {
-          @include mobile {
+          @include tablet {
             display: none;
           }
         }
@@ -81,8 +87,7 @@
         &-mobile {
           display: none;
 
-
-          @include mobile {
+          @include tablet {
             display: block;
             margin-top: 24px;
             margin-bottom: 32px;
@@ -97,14 +102,15 @@
 
         a {
           padding-top: 24px;
-          padding-left: 16px;
+          padding-left: 8px;
+          padding-right: 8px;
 
-          @include mobile{
+          @include tablet {
             padding-top: 32px;
           }
         }
 
-        @include mobile{
+        @include tablet {
           // margin-left: 35px;
         }
       }

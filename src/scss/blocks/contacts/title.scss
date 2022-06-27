@@ -5,14 +5,14 @@
 .contacts {
   max-width: 1206px;
   margin-inline: auto;
-  padding-left: 20px;
+  padding-left: 25px;
 
   &__title {
     margin-top: 110px;
 
     @include mobile {
       margin-top: 56px;
-      margin-left: 25px;
+      // margin-left: 25px;
     }
   }
 
@@ -21,28 +21,32 @@
     margin-top: 165px;
     margin-bottom: 136px;
 
-    @include mobile{
-      margin: 113px 29px 16px 25px;
-    }
-
     @include mobile {
+      margin: 113px 29px 16px 0;
       flex-direction: column;
     }
 
     &-info {
-
-      @include mobile{
+      @include mobile {
         margin-bottom: 40px;
       }
+
+      a {
+        @include font-size(50, 40);
+        @include mobile-small {
+          font-size: 35px;
+        }
+      }
+
       &-title {
         font-size: 32px;
         line-height: 41px;
-        color: #868B85;
+        color: #868b85;
         text-transform: uppercase;
         margin-bottom: 31px;
         @include font-size(32, 24);
 
-        @include mobile{
+        @include mobile {
           margin-bottom: 8px;
         }
 
@@ -56,7 +60,7 @@
           a {
             margin-left: 16px;
 
-            @include mobile{
+            @include mobile {
               margin-left: 0;
               padding-right: 16px;
             }
@@ -78,7 +82,7 @@
 .sosial-title {
   margin-left: 16px;
 
-  @include mobile{
+  @include mobile {
     margin-left: 0px;
   }
 }
@@ -90,5 +94,4 @@
   @include mobile {
     margin-left: 0px;
   }
-
 }
