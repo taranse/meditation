@@ -15,25 +15,31 @@ const swiper = new Swiper('#main_swiper', {
   },
 });
 
-const thumbsSwiper = new Swiper('#swiper_thumbs', {
-  speed: 400,
-  spaceBetween: 24,
-  slidesPerView: 4,
+const modals = document.querySelectorAll('.modal');
+const modalsSwipers = {};
+
+modals.forEach(modal => {
+  const thumbsSwiper = new Swiper('#swiper_thumbs_' + modal.dataset.id, {
+    speed: 400,
+    spaceBetween: 24,
+    slidesPerView: 4,
+  });
+
+  modalsSwipers[modal.dataset.id] = new Swiper('#modal_swiper_' + modal.dataset.id, {
+    speed: 400,
+    spaceBetween: 50,
+    thumbs: {
+      swiper: thumbsSwiper
+    }
+  });
 });
 
 
-const modalSwiper = new Swiper('#modal_swiper', {
-  speed: 400,
-  spaceBetween: 50,
-  thumbs: {
-    swiper: thumbsSwiper
-  }
-});
-
-function modalChangeSlide(slide) {
-  modalSwiper.slideTo(slide)
+function modalChangeSlide(id, slide) {
+  modalsSwipers[id].slideTo(slide)
 }
 
+window.modalChangeSlide = modalChangeSlide
 
 function openModal(id) {
   const modal = document.getElementById(id);
@@ -71,6 +77,5 @@ function toggleMenu() {
 
 window.openModal = openModal
 window.closeModal = closeModal
-window.modalChangeSlide = modalChangeSlide
 window.modalButtonToggle = modalButtonToggle
 window.toggleMenu = toggleMenu
