@@ -26,12 +26,12 @@
       </div>
 
       <div class="catalog__grid">
-        <include src="catalog/product.html"></include>
-        <include src="catalog/product.html"></include>
-        <include src="catalog/product.html"></include>
-        <include src="catalog/product.html"></include>
-        <include src="catalog/product.html"></include>
-        <include src="catalog/product.html"></include>
+        <include src="catalog/product.html" locals='{"id": "1"}'></include>
+        <include src="catalog/product.html" locals='{"id": "2"}'></include>
+        <include src="catalog/product.html" locals='{"id": "3"}'></include>
+        <include src="catalog/product.html" locals='{"id": "4"}'></include>
+        <include src="catalog/product.html" locals='{"id": "5"}'></include>
+        <include src="catalog/product.html" locals='{"id": "6"}'></include>
       </div>
       <include src="catalog/experience.html"></include>
     </div>
@@ -39,7 +39,68 @@
       <include src="footer.html"></include>
     </div>
   </main>
-  <include src="catalog/modals.html"></include>
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "1"
+  }'></include>
+
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "2"
+  }'></include>
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "3"
+  }'></include>
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "4"
+  }'></include>
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "5"
+  }'></include>
+
+  <include src="catalog/modals.html" locals='{
+    "size1": "50x50x50", 
+    "price1": "50 000", 
+    "size2": "40x40x40", 
+    "price2": "40 000", 
+    "size3": "30x30x30",
+    "price3": "30 000",
+    "id": "6"
+  }'></include>
+
   <include src="catalog/modalsthx.html"></include>
 
   <script src="/js/app.js"></script>
