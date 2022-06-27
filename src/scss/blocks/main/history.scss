@@ -1,79 +1,77 @@
 .history {
   position: relative;
+  padding: 0 25px 25px 25px;
 
   &__h2 {
-    font-family: "Druk Cyr";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 240px;
-    line-height: 100%;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 347px;
     margin-top: 90px;
-    color: #414a47;
+    @include font-size(240, 56);
+
+    @include mobile {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
   }
 
   &-part__inner {
     display: flex;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
 
     &-info {
       flex: 1;
       padding-left: 187px;
       padding-top: 90px;
 
-      &-tittle {
-        font-family: "Druk Cyr";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 60px;
-        line-height: 100%;
-        max-width: 1069px;
-        color: #414a47;
-        padding-bottom: 50px;
-        position: relative;
-      }
-
       &-description {
-        font-family: "Neue Haas Unica W1G";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 140%;
-
-        letter-spacing: -0.015em;
-
-        color: #414947;
-
-        opacity: 0.7;
-
         p {
-          padding-top: 40px;
-          margin-right: 504px;
-          max-width: 597px;
+          @include mobile {
+            margin-bottom: 16px;
+          }
         }
       }
 
+      @include mobile {
+        padding-left: 0;
+        padding-top: 0;
+      }
+
+      &-title {
+        padding-bottom: 50px;
+        position: relative;
+        max-width: size(1069, 326);
+        @include font-size(60, 28);
+
+        @include mobile {
+          line-height: 110%;
+          padding-bottom: 32px;
+        }
+      }
+    }
+  }
+
+  &-img {
+    min-width: 285px;
+    margin-top: 447px;
+    padding-left: 32px;
+
+    &-blog {
+      position: absolute;
+      max-width: 731px;
+      right: 2%;
+      top: 36%;
     }
 
-    &-img {
-      min-width: 285px;
-      margin-top: 447px;
-      padding-left: 32px;
-
-      &-blog {
-        position: absolute;
-        max-width: 731px;
-        right: 2%;
-        top: 36%;
-      }
-
-      &-icon {
-        position: relative;
-        max-width: 286px;
-        margin-top: 200px;
-        z-index: 2;
-      }
+    &-icon {
+      position: relative;
+      max-width: 286px;
+      margin-top: 200px;
+      z-index: 2;
     }
   }
 
@@ -89,4 +87,5 @@
     top: 70%;
     z-index: 1;
   }
+
 }

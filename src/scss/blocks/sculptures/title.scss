@@ -3,19 +3,48 @@
   margin-top: 110px;
   margin-bottom: 90px;
 
-  &-inner-info {
-    margin-left: 661px;
-    max-width: 1227px;
-    max-height: 240px;
-    margin-bottom: 115px;
-    padding-right: 32px;
+  @include mobile {
+    margin-top: 56px;
+    margin-left: 25px;
+    margin-bottom: 0;
   }
-  
-  &-info{
-    padding:32px;
+
+  // &-inner-info {
+  //   margin-left: 661px;
+  //   max-width: 1227px;
+  //   max-height: 240px;
+  //   margin-bottom: 115px;
+  //   padding-right: 32px; 
+  // }
+
+  &-info {
+    position: relative;
+    padding: 32px;
     margin-left: 629px;
     margin-bottom: 115px;
     text-indent: 30%;
+
+    @include mobile {
+      padding: 0;
+      margin: 56px 25px 95px 25px;
+    }
+
+    &-description {
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 100%;
+
+      @include mobile{
+        font-size: 36px;
+        text-indent: 48%;
+      }
+    }
   }
 
-} 
+}
+
+.h4 {
+  @include mobile {
+    font-size: 36px;
+  }
+}

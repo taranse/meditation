@@ -29,24 +29,32 @@
 
   &__inner {
     position: relative;
-    width: 598px;
-    height: 318px;
     background: #fff8eb;
     border: 2px solid #868b85;
     border-radius: 26px;
+    width: size(525, 326);
+    height: size(318, 255);
+
 
     &-title {
-      width: 525px;
-      font-size: 90px;
       line-height: 100%;
       letter-spacing: -0.01em;
-      padding: 64px 33px 32px 40px;
+      padding: 48px 51px 32px 32px;
+      @include font-size(90, 40);
+      width: size(525, 243);
+
     }
 
     &-description {
-      width: 525px;
-      opacity: 0.7;
-      padding: 0 33px 64px 40px;
+      padding: 0 51px 48px 32px;
+      letter-spacing: -0.015em;
+
+      p {
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+
     }
   }
 }

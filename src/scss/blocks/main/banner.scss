@@ -5,12 +5,14 @@
     position: absolute;
     right: -30%;
     top: -34%;
-
   }
 
   &__img {
     position: relative;
     padding: 32px;
-    padding-top: 190px;
+
+    @include mobile{ 
+      padding: 0 25px 25px 25px;
+    }
   }
 }

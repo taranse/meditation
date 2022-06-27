@@ -44,7 +44,7 @@ span {
 }
 
 .border-radius {
-  border-radius: $borderRadius;
+  border-radius: size(120, 48);
   overflow: hidden;
 
   &_half {
@@ -58,34 +58,44 @@ span {
   line-height: 100%;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @include font-size(240, 56);
 }
 
 .h3 {
-  @include font-size(140, 90);
+  @include font-size(140, 56);
   line-height: 100%;
   text-transform: uppercase;
 }
 
 .h4 {
-  font-size: 80px;
+  @include font-size(80, 36);
   line-height: 100%;
   color: #404846;
 }
 
 .h5 {
-  font-size: 64px;
-  line-height: 81px;
+  @include font-size(64, 48);
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 
 .title_main {
   margin-bottom: 40px;
+
+  @include mobile{
+    margin-bottom: 32px;
+  }
 }
 
 .title_margin {
   margin-top: 160px;
   margin-bottom: 90px;
+
+  @include mobile{
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
 }
 
 .frame {
@@ -102,9 +112,8 @@ span {
     left: 0;
     top: 0;
     font-weight: 500;
-    font-size: 24px;
     line-height: 140%;
-
+    @include font-size(24, 14);
     letter-spacing: -0.015em;
 
     color: #677470;

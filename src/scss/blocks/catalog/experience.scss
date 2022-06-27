@@ -3,29 +3,60 @@
   margin-top: 200px;
   margin-bottom: 200px;
 
+  @include tablet {
+    margin: 72px 25px;
+  }
+
+
   &__inner {
     margin-left: 645px;
     position: relative;
     z-index: 1;
 
+    @include tablet {
+      margin-left: 0;
+    }
+
     &-title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 100%;
       margin-right: 57px;
       margin-bottom: 64px;
       text-indent: 21%;
+
+
+      @include tablet {
+        font-size: 36px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        text-indent: 35%;
+      }
     }
 
     &-btn {
-      padding: 32px 48px;
-      width: 455px;
-
+      padding: 32px 0;
       background: #8f7949;
       border-radius: 26px;
-
       font-weight: 500;
-      font-size: 32px;
+      @include font-size(32, 22);
       line-height: 41px;
       color: #fff;
       text-transform: uppercase;
+
+      width: size(455, 280);
+      height: size(105, 76);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include tablet {
+        line-height: 28px;
+        border-radius: 16px;
+        padding: 24px 0;
+      }
     }
   }
 
@@ -34,5 +65,12 @@
     left: -14.5%;
     top: -44.5%;
     z-index: 0;
+
+    @include tablet {
+      width: 420px;
+      left: 0;
+      top: 0;
+      transform: translate(-49%, -19%);
+    }
   }
 }

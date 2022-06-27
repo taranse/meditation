@@ -21,17 +21,20 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size: 28px;
-    line-height: 36px;
-    width: 112px;
-    height: 112px;
     background-color: #8f7949;
-    border-radius: 32px;
     bottom: 54px;
     right: 54px;
     color: #fff;
-    letter-spacing: -0.01em;
     text-transform: uppercase;
+    width: size(112, 90);
+    height: size(112, 90);
+    border-radius: size(32, 24);
+    @include font-size(28, 20);
+
+    @include mobile {
+      bottom: 24px;
+      right: 24px;
+    }
   }
 
   &__inner {
@@ -41,47 +44,59 @@
     border-right: 1px solid rgba(64, 72, 70, 0.15);
     border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
-    @include laptop {
-      
-    }
+    @include laptop {}
 
     @include tablet {
       padding: 24px;
     }
 
-    @include mobile {
-    }
+    @include mobile {}
 
     &-img {
       max-width: 574px;
       position: relative;
+      margin-bottom: 48px;
 
       @include mobile {
         position: static;
+        margin-bottom: 24px;
       }
     }
 
     &-block {
       max-width: 574px;
-      margin-top: 48px;
 
       &-tittle {
         margin-bottom: 32px;
+
+        @include mobile{
+          margin-bottom: 16px;
+        }
       }
 
       &-description {
         margin-bottom: 48px;
+
+        @include mobile{
+          margin-bottom: 16px;
+        }
       }
 
       &-price {
         font-size: 56px;
-        line-height: 71px;
         letter-spacing: -0.01em;
         color: #677471;
+
+        @include mobile {
+          :first-child {
+            display: none;
+          }
+        }
 
         sup {
           font-size: 38px;
           padding: 0 11px;
+          
         }
       }
     }

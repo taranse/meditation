@@ -5,5 +5,18 @@
     position: relative;
     padding: 32px;
     z-index: 2;
+
+    img {
+      @include mobile {
+        min-height: 192px;
+      }
+    }
+
+    @include mobile {
+      padding: 25px;
+      border-radius: 48px;
+    }
+
+
   }
 }

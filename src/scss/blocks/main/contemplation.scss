@@ -4,26 +4,37 @@
   margin-top: 216px;
   border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
+  @include mobile {
+    margin-top: 39px;
+  }
+
 
   &-part__inner {
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+      padding: 25px;
+    }
+
     &-img {
-      min-width: 447px;
-      padding: 0px 32px;
+      min-width: size(447, 200);
+      padding-right: 150px;
     }
 
     &-info {
       margin-left: 189px;
-      font-family: "Druk Cyr";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 80px;
-      line-height: 100%;
       flex: 1;
       margin-bottom: 200px;
-      color: #404846;
       text-indent: 23%;
+      @include font-size(80, 36);
+
+      @include mobile {
+        margin-top: 48px;
+        margin-left: 0;
+        text-indent: 38%;
+        margin-bottom: 23px;
+      }
 
       span {
         color: #8f7949;
