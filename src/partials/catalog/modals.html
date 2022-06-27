@@ -1,10 +1,10 @@
-<div class="modal" id="product_modal_{{id}}">
+<div class="modal" id="product_modal_{{id}}" data-id="{{id}}">
   <button class="modal__close" onclick="closeModal('product_modal_{{id}}')">
     <img src="./assets/images/close.svg" alt="">
   </button>
   <div class="modal__inner">
     <div class="modal__inner-info-group">
-      <div class="swiper modal__inner-info-img" id="modal_swiper">
+      <div class="swiper modal__inner-info-img" id="modal_swiper_{{id}}">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./assets/images/catalog/modals_big.jpg" class="border-radius" alt="">
@@ -20,18 +20,18 @@
           </div>
         </div>
       </div>
-      <div class="swiper modal__inner-info-img-small" id="swiper_thumbs">
+      <div class="swiper modal__inner-info-img-small" id="swiper_thumbs_{{id}}">
         <div class="swiper-wrapper">
-          <button onclick="modalChangeSlide(0)" class="swiper-slide">
+          <button onclick="modalChangeSlide('{{id}}', 0)" class="swiper-slide">
             <img src="./assets/images/catalog/modals_small1.jpg" alt="">
           </button>
-          <button onclick="modalChangeSlide(1)" class="swiper-slide">
+          <button onclick="modalChangeSlide('{{id}}', 1)" class="swiper-slide">
             <img src="./assets/images/catalog/modals_small1.jpg" alt="">
           </button>
-          <button onclick="modalChangeSlide(2)" class="swiper-slide">
+          <button onclick="modalChangeSlide('{{id}}', 2)" class="swiper-slide">
             <img src="./assets/images/catalog/modals_small1.jpg" alt="">
           </button>
-          <button onclick="modalChangeSlide(3)" class="swiper-slide">
+          <button onclick="modalChangeSlide('{{id}}', 3)" class="swiper-slide">
             <img src="./assets/images/catalog/modals_small1.jpg" alt="">
           </button>
         </div>
