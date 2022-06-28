@@ -3,24 +3,33 @@
 
   &__background-frame__right {
     position: absolute;
-    right: -40%;
-    top: 0%;
-    transform: translate(-14%, -43%);
+    bottom: 0%;
+    right: 0;
+    transform: translate(43%, -14%);
+    width: 71%;
 
+    @include tablet{
+      transform: translate(25%, -13%);
+      width: 100%;
+    }
 
+    @include mobile{
+      transform: translate(-13%, -40%);
+      left: 0;
+    }
   }
 
   &__img {
     position: relative;
     padding: 32px;
-    
-    img{
-      @include mobile{
+
+    img {
+      @include mobile {
         min-height: 192px;
       }
     }
 
-    @include mobile{ 
+    @include mobile {
       padding: 0 25px 25px 25px;
     }
   }

@@ -82,7 +82,7 @@
       font-size: 32px;
       text-transform: uppercase;
       color: #ffffff;
-      
+
       @include mobile {
         border-radius: 16px;
         margin-top: 0;
@@ -92,4 +92,14 @@
       }
     }
   }
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: rgba($color: #fff, $alpha: 1.0);
 }

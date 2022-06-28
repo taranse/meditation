@@ -23,6 +23,8 @@
 
   &-part__inner {
     display: flex;
+    position: relative;
+    z-index: 2;
 
     @include mobile {
       flex-direction: column-reverse;
@@ -144,14 +146,35 @@
 
   &__background-frame-right {
     position: absolute;
-    right: -14%;
-    top: 1%;
+    right: 0;
+    top: 0;
+    transform: translate(23%, 1%);
+    width: 64%;
+
+    @include mobile {
+
+      bottom: 0;
+      transform: translate(-19%, 26%);
+
+    }
   }
 
   &__background-frame-left {
     position: absolute;
-    left: -13%;
-    top: 67%;
+    left: 0;
+    bottom: 0;
+    transform: translate(-23%, 37%);
     z-index: 1;
+    width: 55%;
+
+    @include tablet{
+      transform: translate(-25%, 14%);
+    }
+
+    @include mobile {
+      right: 0;
+      transform: translate(37%, 16%);
+      width: 78%;
+    }
   }
 }

@@ -22,8 +22,15 @@
 
   &__background-frame {
     position: absolute;
-    top: -10%;
-    left: -27%;
+    top: 0;
+    left: 0;
+    transform: translate(-37%, -10%);
+    width: 73%;
+
+    @include mobile {
+      width: 100%;
+      transform: translate(-53%, -15%);
+    }
   }
 
   &-blog__inner {
@@ -50,6 +57,7 @@
     }
 
     @include mobile {
+      display: block;
       padding-left: 0;
       padding-right: 0;
       margin-top: 0;
@@ -95,6 +103,8 @@
 
       @include tablet {
         width: 70%;
+        position: relative;
+        z-index: 2;
       }
 
       @include mobile {
@@ -111,9 +121,11 @@
   }
 
   &-part__inner-icon {
+    position: relative;
     width: 33%;
     margin-top: 20%;
     margin-left: 10%;
+    z-index: 2;
 
     @include mobile {
       width: 0;
@@ -141,9 +153,12 @@
         border-radius: 32px;
       }
     }
-
-    @include tablet {
-      max-width: 18%;
+    @include tablet{
+      display: none;
+    }
+    @include mobile {
+      display: block;
+      max-width: 36%;
       right: 2%;
       top: 33%;
 
@@ -153,7 +168,6 @@
     }
 
     @include mobile {
-      display: none;
       width: 36%;
       left: 0%;
       top: 10%;

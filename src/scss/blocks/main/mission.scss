@@ -38,7 +38,7 @@
     @include mobile {
       flex-direction: column-reverse;
       padding-left: 0;
-      margin-bottom: 188px;
+      margin-bottom: 14%;
     }
 
   }
@@ -50,7 +50,7 @@
     width: 31%;
     left: 2%;
 
-    @include tablet{
+    @include tablet {
       display: none;
     }
   }
@@ -90,12 +90,17 @@
       @include mobile {
         margin-top: 0;
         width: 100%;
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        z-index: 2;
       }
 
       p {
         @include mobile {
           margin-right: 0;
           min-width: 100%;
+
         }
       }
     }
@@ -133,12 +138,29 @@
       left: 2%;
       top: 100%;
       border-radius: 32px;
+      position: relative;
+      z-index: 2;
     }
   }
 
   &-background-frame {
     position: absolute;
     right: 0;
-    top: 65%;
+    bottom: 0;
+    transform: translate(2%, 50%);
+    width: 67%;
+
+    @include laptop {
+      transform: translate(1%, 50%);
+    }
+
+    @include tablet {
+      transform: translate(0%, 40%);
+    }
+
+    @include mobile {
+      top: 0;
+      width: 120%;
+    }
   }
 }

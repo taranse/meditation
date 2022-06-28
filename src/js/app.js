@@ -1,6 +1,6 @@
 import resize from "./utils/resize";
 import debounce from "./utils/debounce";
-import Swiper from "swiper";
+import Swiper, { Pagination } from "swiper";
 
 
 resize();
@@ -9,6 +9,8 @@ window.addEventListener("resize", debounce(resize));
 const swiper = new Swiper('#main_swiper', {
   speed: 400,
   spaceBetween: 50,
+  
+  modules: [Pagination],
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',

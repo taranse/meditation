@@ -68,13 +68,18 @@
       width: 20%;
 
       @include tablet {
+        padding-left: 8px;
         align-items: center;
         width: 100%;
       }
 
       &-phone {
         color: #fff;
-        padding-left: 16px;
+
+        @include laptop {
+          padding-left: 8px;
+        }
+
 
         @include font-size(40, 32);
 

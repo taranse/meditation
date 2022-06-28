@@ -30,6 +30,7 @@
     z-index: 2;
 
     @include mobile {
+      width: 100%;
       font-size: 40px;
       line-height: 110%;
       color: #414a47;
@@ -47,16 +48,19 @@
     color: #414947;
     margin-top: 70px;
     width: size(737, 326);
+    position: relative;
+    z-index: 2;
 
     @include mobile {
       margin-top: 16px;
       font-size: 14px;
+      width: 100%;
     }
   }
 
   &-description {
     @include mobile {
-      max-width: 328px;
+      width: 100%;
     }
   }
 
@@ -73,6 +77,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
+  position: relative;
+  z-index: 2;
   /* identical to box height, or 28px */
 
   letter-spacing: -0.015em;
@@ -91,7 +97,7 @@
     padding-left: 24px;
 
     @include mobile {
-      width: 298px;
+      width: 100%;
       padding-left: 16px;
       font-size: 12px;
       line-height: 140%;
@@ -127,19 +133,31 @@
 
 .sculptures__background-frame-body {
   position: absolute;
-  left: -75%;
+  left: 0;
   top: 0%;
-  transform: translate(-50%, 8%);
+  width: 160%;
+  transform: translate(-97%, 15%);
 
-  @include mobile{
-    transform: translate(-21%, 119%);
+  @include laptop{
+    transform: translate(-86%, 67%);
+  }
+
+  @include mobile {
+    transform: translate(-54%, 63%);
   }
 }
 
 .sculptures__background-frame-foooter {
+  width: 150%;
   position: absolute;
-  right: -175%;
-  bottom: -41%;
+  right: 0%;
+  bottom: 0%;
+  transform: translate(99%, 66%);
+
+
+  @include laptop {
+    transform: translate(79%, 66%);
+  }
 
   @include mobile {
     display: none;
@@ -150,11 +168,13 @@
   position: absolute;
   top: 0%;
   left: 0;
-  transform: translate(-125%, -13%);
+  transform: translate(-127%, -15%);
+  width: 100%;
 
   @include mobile {
-    top: 0%;
-    left: -64%;
-    transform: translate(3%, 4%);
+    right: 0;
+    bottom: 0%;
+    transform: translate(-15%, 19%);
+    width: 110%;
   }
 }
