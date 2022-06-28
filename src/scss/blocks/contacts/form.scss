@@ -20,6 +20,7 @@
     padding-top: 23px;
     padding-bottom: 22px;
     padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 24px;
     z-index: 2;
 
@@ -80,7 +81,7 @@
 .contacts__form-group::placeholder {
   font-weight: 500;
   line-height: 41px;
-
+  padding-right: 40px;
   text-transform: uppercase;
 
   color: #868b85;
@@ -96,9 +97,12 @@
   box-sizing: border-box;
   border: 2px solid #868b85;
   border-radius: 26px;
-
+  font-weight: 500;
   width: size(597, 326);
   height: size(216, 164);
+
+  color: #000;
+  @include font-size(32, 24);
 
   @include mobile {
     border-radius: 16px;

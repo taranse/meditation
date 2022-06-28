@@ -33,6 +33,7 @@
 
       a {
         @include font-size(50, 40);
+
         @include mobile-small {
           font-size: 35px;
         }
@@ -50,12 +51,31 @@
           margin-bottom: 8px;
         }
 
+        &-phone {
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #677471
+          }
+        }
+
         &-main {
           text-transform: uppercase;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #677471
+          }
         }
 
         &-sosial {
           display: flex;
+          transition: color 0.3s ease;
+
+          a:hover {
+            opacity: 0.3;
+            transition: 0.3s ease;
+          }
 
           a {
             margin-left: 16px;

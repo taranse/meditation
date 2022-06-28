@@ -82,6 +82,11 @@
     position: absolute;
     height: 100%;
     top: 0;
+    transition: color 0.3s ease;
+    
+    &:hover{
+      color: #677471;
+    }
     @include font-size(40, 20);
 
     @include tablet {
@@ -177,7 +182,13 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        transition: transform 0.5s ease, opacity 0.25s ease;
+        transition: transform 0.5s ease, opacity 0.25s ease, background-color 0.3s ease;
+      }
+
+      &:hover {
+        span {
+          background-color: #C4A667;
+        }
       }
 
       :first-child {
@@ -237,6 +248,7 @@
     &-social {
       display: flex;
       padding-top: 32px;
+
     }
 
   }

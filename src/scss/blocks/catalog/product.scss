@@ -33,6 +33,7 @@
     border-radius: size(32, 24);
     @include font-size(28, 20);
 
+    transition: 0.3s ease;
 
     @include mobile {
       bottom: 24px;
@@ -42,7 +43,6 @@
 
   &__btn:hover {
     background: #C4A667;
-    transition: 0.3s ease;
   }
 
   &__inner {

@@ -125,11 +125,22 @@ input {
   font-size: 32px;
   font-weight: 500;
 
-  color: #868b85;
+  color: #000;
+
+  
 
   @include mobile {
     font-size: 24px;
     line-height: 30px;
     padding-left: 32px;
+  }
+}
+
+
+.button-hover { 
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #C4A667;
   }
 }
