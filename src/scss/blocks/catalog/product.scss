@@ -33,10 +33,16 @@
     border-radius: size(32, 24);
     @include font-size(28, 20);
 
+    transition: 0.3s ease;
+
     @include mobile {
       bottom: 24px;
       right: 24px;
     }
+  }
+
+  &__btn:hover {
+    background: #C4A667;
   }
 
   &__inner {
@@ -46,15 +52,13 @@
     border-right: 1px solid rgba(64, 72, 70, 0.15);
     border-bottom: 1px solid rgba(64, 72, 70, 0.15);
 
-    @include laptop {
-    }
+    @include laptop {}
 
     @include tablet {
       padding: 24px;
     }
 
-    @include mobile {
-    }
+    @include mobile {}
 
     &-img {
       max-width: 574px;

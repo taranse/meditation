@@ -1,6 +1,10 @@
 <div class="modal" id="product_modal_{{id}}" data-id="{{id}}">
   <button class="modal__close" onclick="closeModal('product_modal_{{id}}')">
-    <img src="./assets/images/close.svg" alt="">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.686292 20.4853C-0.0947575 21.2663 -0.0947568 22.5326 0.686292 23.3137C1.46734 24.0947 2.73367 24.0947 3.51472 23.3137L12 14.8284L20.4853 23.3137C21.2663 24.0947 22.5327 24.0947 23.3137 23.3137C24.0948 22.5326 24.0948 21.2663 23.3137 20.4853L14.8284 12L23.3137 3.51469C24.0948 2.73364 24.0948 1.46731 23.3137 0.686266C22.5327 -0.0947823 21.2663 -0.0947823 20.4853 0.686266L12 9.17155L3.51472 0.686267C2.73367 -0.0947817 1.46734 -0.0947816 0.686292 0.686267C-0.0947575 1.46732 -0.0947569 2.73365 0.686292 3.51469L9.17157 12L0.686292 20.4853Z"
+        fill="#8F7949" />
+    </svg>
   </button>
   <div class="modal__inner">
     <div class="modal__inner-info-group">
@@ -44,11 +48,11 @@
           и покрыт паталью.</p>
       </div>
       <div class="modal__inner-info-content-size">
-        <button class="modal__inner-info-content-size-btn active" onclick="modalButtonToggle(this, '{{id}}')"
+        <button class="modal__inner-info-content-size-btn active button-hover" onclick="modalButtonToggle(this, '{{id}}')"
           data-price="{{price1}}">{{size1}}</button>
-        <button class="modal__inner-info-content-size-btn " onclick="modalButtonToggle(this, '{{id}}')"
+        <button class="modal__inner-info-content-size-btn button-hover" onclick="modalButtonToggle(this, '{{id}}')"
           data-price="{{price2}}">{{size2}}</button>
-        <button class="modal__inner-info-content-size-btn " onclick="modalButtonToggle(this, '{{id}}')"
+        <button class="modal__inner-info-content-size-btn button-hover" onclick="modalButtonToggle(this, '{{id}}')"
           data-price="{{price3}}">{{size3}}</button>
       </div>
       <div class="modal__inner-info-content-price">
@@ -61,7 +65,7 @@
         <input class="modal__form-group" type="text" name="" id="" placeholder="ваш телефон">
       </form>
 
-      <button class="modal__btn" onclick="openModal('success_modal')">Заказать</button>
+      <button class="modal__btn button-hover" onclick="openModal('success_modal')">Заказать</button>
       <div>
       </div>
     </div>

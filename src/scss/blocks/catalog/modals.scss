@@ -20,6 +20,16 @@
     right: 37px;
     top: 37px;
 
+    svg path{
+      transition: 0.3s ease;
+    }
+    
+    &:hover{
+      svg path{
+        fill: #C4A667;
+      }
+    }
+
     @include laptop {
       top: 50px;
       right: 50px;
@@ -123,6 +133,11 @@
             &.active {
               background: #8f7949;
             }
+
+            &:hover{
+              background: #C4A667;
+              transition: 0.3s ease;
+            }
           }
 
           &-btn:not(:first-child) {
@@ -177,7 +192,7 @@
           margin-top: 24px;
           // justify-content: center;
 
-          @include laptop{
+          @include laptop {
             width: 35vw;
           }
 
@@ -242,7 +257,7 @@
   font-weight: 500;
   font-size: 32px;
   /* identical to box height */
-  
+
   text-transform: uppercase;
 
   color: #ffffff;

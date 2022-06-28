@@ -91,6 +91,11 @@
         line-height: 30px;
       }
     }
+
+    &-btn:hover {
+      background: #C4A667;
+      transition: 0.3s ease;
+    }
   }
 }
 
