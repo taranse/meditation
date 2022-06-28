@@ -1,6 +1,6 @@
 import resize from "./utils/resize";
 import debounce from "./utils/debounce";
-import Swiper, { Pagination } from "swiper";
+import Swiper, { Autoplay, Pagination } from "swiper";
 
 
 resize();
@@ -9,8 +9,11 @@ window.addEventListener("resize", debounce(resize));
 const swiper = new Swiper('#main_swiper', {
   speed: 400,
   spaceBetween: 50,
-  
-  modules: [Pagination],
+  autoplay: {
+    delay: 5000,
+  },
+  modules: [Pagination, Autoplay],
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
