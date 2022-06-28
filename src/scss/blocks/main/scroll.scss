@@ -1,13 +1,13 @@
 .scroll_line {
   display: flex;
 
-  @include mobile{
+  @include mobile {
     margin-top: 33px;
   }
 
   &-animation {
     display: flex;
-    animation: scrollLine 5s linear infinite;
+    animation: scrollLine 50s linear infinite;
   }
 
   &-img {
@@ -33,11 +33,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     @include font-size(300, 72);
-
-
   }
-
-
 }
 
 @keyframes scrollLine {
